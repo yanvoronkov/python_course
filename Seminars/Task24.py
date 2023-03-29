@@ -30,11 +30,11 @@
 # print(max_harvest)
 
 n = int(input('Введите число кустов: '))
-a = list(map(int, input(f"Введите чисел {n} в строку через пробел: ").split()))
+a = list(map(int, input(
+    f"Введите количество ягод на кустах в строку через пробел: ").split()))
 
 max_sum = 0
 for i in range(n):
-    print(i)
     if i == 0:
         curr_sum = a[i] + a[i + 1] + a[n - 1]
     elif i == n - 1:

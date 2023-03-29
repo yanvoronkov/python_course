@@ -29,19 +29,31 @@
 
 # print(max_harvest)
 
-n = int(input('Введите число кустов: '))
-a = list(map(int, input(
-    f"Введите количество ягод на кустах в строку через пробел: ").split()))
+# n = int(input('Введите число кустов: '))
+# a = list(map(int, input(
+#     f"Введите количество ягод на кустах в строку через пробел: ").split()))
 
-max_sum = 0
+# max_sum = 0
+# for i in range(n):
+#     if i == 0:
+#         curr_sum = a[i] + a[i + 1] + a[n - 1]
+#     elif i == n - 1:
+#         curr_sum = a[i] + a[i - 1] + a[0]
+#     else:
+#         curr_sum = a[i] + a[i - 1] + a[i + 1]
+#     if curr_sum > max_sum:
+#         max_sum = curr_sum
+
+# print(max_sum)
+
+# Эталонное решение
+n = int(input())
+arr = list()
 for i in range(n):
-    if i == 0:
-        curr_sum = a[i] + a[i + 1] + a[n - 1]
-    elif i == n - 1:
-        curr_sum = a[i] + a[i - 1] + a[0]
-    else:
-        curr_sum = a[i] + a[i - 1] + a[i + 1]
-    if curr_sum > max_sum:
-        max_sum = curr_sum
-
-print(max_sum)
+    x = int(input())
+    arr.append(x)
+arr_count = list()
+for i in range(len(arr) - 1):
+    arr_count.append(arr[i - 1] + arr[i] + arr[i + 1])
+arr_count.append(arr[-2] + arr[-1] + arr[0])
+print(max(arr_count))

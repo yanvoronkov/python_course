@@ -5,8 +5,8 @@
 
 def arith_progr(a1, n, d):
     arith_progr = []
-    for i in range(1, n+1):
-        arith_progr.append(a1 + (i-1) * d)
+    for i in range(n):
+        arith_progr.append(a1 + i * d)
     return arith_progr
 
 

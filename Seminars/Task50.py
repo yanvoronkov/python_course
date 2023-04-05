@@ -35,6 +35,6 @@ def find_app():
                 print(line.strip())
 
 
-# append_app()
+append_app()
 read_app()
 # find_app()

@@ -2,23 +2,6 @@
 # Пользователь также может ввести имя или фамилию, и Вы должны реализовать функционал
 # для изменения и удаления данных.
 
-# file_path = r'Seminars/text.txt'
-
-# def add_record(record):
-#     with open(file_path, 'a') as f:
-#         f.write(f"{record}\n")
-
-# def read_records():
-#     with open(file_path, 'r', encoding='UTF-8') as f:
-#         return f.read()
-        
-
-# def find_records(search_record):
-#     with open(file_path, 'r', encoding='UTF-8') as f:
-#         for line in f:
-#             if search_record.casefold() in line.casefold():
-#                 return line.strip()
-
 
 file_path = r'Seminars/text.txt'
 
